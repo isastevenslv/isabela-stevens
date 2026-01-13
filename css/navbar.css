@@ -1,0 +1,57 @@
+/* no es solo navabar tambien incluye el estilo general*/
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  color: #111;
+  background: #fff;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.info-navbar{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nombre{
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.02em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+}
+
+.posicion-navbar{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0.85;
+  transition: opacity 150ms ease;
+}
+
+.link:hover{ opacity: 1; }
+
+@media (max-width: 560px){
+  .info-navbar{ padding: 14px 24px; }
+}

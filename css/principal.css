@@ -1,0 +1,59 @@
+/* informacion de la pagina principal o de bienvenida*/
+
+.principal{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/principal.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.info-principal{
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.caja{
+  max-width: 720px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 24px 28px;
+  border-radius: 8px;
+}
+
+.texto-principal{
+  max-width: 720px;
+  text-align: center;
+}
+
+.hola{
+  margin: 0 0 12px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.titulo{
+  margin: 0 0 20px 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.descripcion{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px){
+  .titulo{ font-size: 36px; }
+}

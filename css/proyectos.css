@@ -1,0 +1,205 @@
+/*no solo son proyectos tambien el sobre mi y contacto*/
+
+/*proyectos */
+
+.proyectos{
+  padding: 60px 0;
+}
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.encabezado-proyecto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.subtitulo-proyecto{
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.regresar{
+  margin: 0;
+  font-size: 12px;
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.regresar:hover{
+  text-decoration: underline;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.imagen img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.descripcion{
+  max-width: 720px;
+}
+
+.descripcion p{
+  margin: 0 0 14px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px){
+  .proyectos{
+    padding: 40px 0;
+  }
+
+  .galeria{
+    grid-template-columns: 1fr;
+  }
+
+  .imagen img{
+    height: 220px;
+  }
+}
+
+/*sobre mí*/
+
+.about{
+  padding: 60px 0;
+}
+
+.subtitulo-about{
+  margin: 0 0 20px 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.estructura{
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 64px;
+  align-items: end;
+}
+
+.imagen-about{
+  width: 100%;
+  height: calc(100vh - 180px);  /*me apoye de ia para esto*/
+  object-fit: contain;
+  object-position: left top;
+  display: block;
+  line-height: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.descripcion-about p{
+  margin: 0 0 14px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.detalles-about{
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.detalle-about{
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.opacidad{ opacity: 0.65; }
+
+@media (max-width: 900px){
+  .estructura{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/*contacto*/
+
+.contact{
+  padding: 60px 0;
+  font-family: inherit;
+}
+
+.subtitulo-contacto{
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.estructura-contacto{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.descripcion-contacto{
+  margin: 0 0 18px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 520px;
+}
+
+.links-contacto{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.link-contacto{
+  text-decoration: underline;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;  
+  opacity: 0.85;
+  transition: opacity 150ms ease;
+}
+
+.link-contacto:hover{ opacity: 1; }
+
+.indicaciones-contacto{
+  margin-top: 36px;
+  font-size: 10px;
+  opacity: 0.55;
+}
+
+@media (max-width: 900px){
+  .estructura-contacto{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+

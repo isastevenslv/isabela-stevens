@@ -1,0 +1,103 @@
+.work{
+  padding: 60px 0;
+}
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.subtitulos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.subtitulo-work{
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.details{
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.maquetacion{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.proyecto{
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
+
+.cuadro-proyecto{
+  position: relative;
+  overflow: hidden;
+}
+
+.imagen{
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #f0f0f0;
+  display: block;
+}
+
+.capa-blanca{  /*con ayuda de IA hice esta capa blanca para que el texto no e perdiera sobre la foto*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.subtitulo-proyecto{
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.categoria{
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.proyecto.activo .capa-blanca{
+  opacity: 1;
+}
+
+@media (max-width: 900px){
+  .subtitulos{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .maquetacion{
+    grid-template-columns: 1fr;
+  }
+
+  .imagen{
+    height: 240px;
+  }
+}
